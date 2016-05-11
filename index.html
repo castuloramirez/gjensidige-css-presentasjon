@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>VanillaJS</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/bekk/remark/master/dist/bekk.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bekk-black">
+    <textarea id="source" style="display: none;">class: front-page
+  # Gjensidige
+  ## &nbsp;
+
+  <span class="today-date"></span>
+---
+
+<div class="browser">
+  <div class="title">Gjensidige</div>
+  <div class="url">https://gjensidige.no</div>
+  <iframe src="https://gjensidige.no" />
+</div>
+
+---
+
+<div class="browser">
+  <div class="title">Gjensidige</div>
+  <div class="url">https://gjensidige.no/privat/forsikring/barneforsikring</div>
+  <iframe src="https://gjensidige.no/privat/forsikring/barneforsikring" />
+</div>
+
+---
+
+<div class="browser">
+  <div class="title">Gjensidige</div>
+  <div class="url">https://gjensidige.no/privat/forsikring/bilforsikring/sjekk-pris?WT.ac=P_RichModule_Bilforsikring_Sjekk+pris+og+kjop_Fast_20.05.2015®nr=hs324232&amp;externalRef=gjensidige</div>
+  <iframe src="https://gjensidige.no/privat/forsikring/bilforsikring/sjekk-pris?WT.ac=P_RichModule_Bilforsikring_Sjekk+pris+og+kjop_Fast_20.05.2015®nr=hs324232&amp;externalRef=gjensidige" />
+</div>
+
+---
+
+<div class="browser">
+  <div class="title">Gjensidige</div>
+  <div class="url">https://www.gjensidige.lt</div>
+  <iframe src="https://www.gjensidige.lt" />
+</div>
+
+---
+
+<div class="browser">
+  <div class="title">Gouda</div>
+  <div class="url">https://www.gouda.no</div>
+  <iframe src="https://www.gouda.no" />
+</div>
+
+---
+
+<div class="browser">
+  <div class="title"><img src="resources/favicon.ico" class="favicon"> Din Side</div>
+  <div class="url">https://www.gjensidige.no/no/1/Din+side</div>
+  <div class="content">
+    <img src="resources/din-side.png" style="width:100%"/>
+  </div>
+</div>
+
+---
+
+<div class="browser">
+  <div class="title">Din Side - Meld skade</div>
+  <div class="url">https://www.gjensidige.no/no/1/Din+side</div>
+  <div class="content">
+    <img src="resources/meld-skade.png" style="width:100%"/>
+  </div>
+</div>
+
+---
+
+# Gjensidige teamoppdeling
+
+<div class="lag">
+  <h2>Fast-track</h2>
+  <img src="resources/user.svg" />
+</div>
+
+--
+
+<div class="lag">
+  <h2>IKT utvikling</h2>
+  <div class="prosjekt">
+    <img src="resources/user.svg" />
+    <img src="resources/user.svg" />
+    <img src="resources/user.svg" />
+    <img src="resources/user.svg" />
+  </div>
+  <div class="prosjekt">
+    <img src="resources/user.svg" />
+    <img src="resources/user.svg" />
+    <img src="resources/user.svg" />
+    <img src="resources/user.svg" />
+  </div>
+  <div class="prosjekt">
+    <img src="resources/user.svg" />
+    <img src="resources/user.svg" />
+    <img src="resources/user.svg" />
+    <img src="resources/user.svg" />
+  </div>
+  <span style="vertical-align:bottom">...</span>
+  <div class="forvaltning">
+    <img src="resources/user.svg" />
+    <img src="resources/user.svg" />
+    <img src="resources/user.svg" />
+    <img src="resources/user.svg" />
+  </div>
+
+</div>
+--
+<div class="lag">
+  <h2>SOA / Integrasjon</h2>
+  <img src="resources/user.svg" />
+  <img src="resources/user.svg" />
+  <img src="resources/user.svg" />
+  ...
+  <img src="resources/user.svg" />
+
+</div>
+--
+<div class="lag">
+  <h2>Stormaskin</h2>
+  ???
+</div>
+
+--
+
+<div class="lag" style="
+  position: absolute;
+  top: 114px;
+  right: 4em;
+  height: 527px;
+  width: 18%
+">
+  <h2>Marked og kommunikasjon</h2>
+  <img src="resources/user.svg" />
+</div>
+
+---
+
+#Naming convention
+
+```html
+  <button type="button" class="btn btn-default btn-spacing">
+    Primary button
+  </button>
+
+  <span class="gj-icon-flag-english size-64x64"></span>
+
+  <div class="row">
+    <div class="col-sm-9 col-sm-plus-6 col-md-4 col-lg-9"></div>
+  </div>
+
+```
+
+---
+class: center middle
+
+<img src="resources/atomic-design.png" />
+
+.source[http://bradfrost.com/blog/post/atomic-web-design/]
+
+---
+
+<div class="browser">
+  <div class="title">GJEFF</div>
+  <div class="url">https://www.gjensidige.no/_public/gjeff-docs/index.html#/</div>
+  <iframe src="https://www.gjensidige.no/_public/gjeff-docs/index.html#/" />
+</div>
+
+---
+class: center middle
+
+<img src="resources/gjeff-include.png" />
+
+    </textarea>
+    <script src="https://cdn.rawgit.com/bekk/remark/master/vendor/remark.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var slideshow = remark.create({
+        ratio: '16:9',
+        highlightLanguage: 'javascript',
+        highlightStyle: 'monokai',
+        navigation: {
+          scroll: false
+        }
+      });
+
+      var dateStr = new Date().toLocaleString('nb-NO', { year: 'numeric', month: 'long', day: 'numeric' });
+
+      document.querySelector('.today-date').textContent = dateStr;
+    </script>
+
+  </body>
+</html>
